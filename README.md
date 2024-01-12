@@ -1,2 +1,4 @@
 # odin-landing-page
-Basic landing page website.
+The Odin Project | Foundations Course | Flexbox | Project: Landing Page
+
+Project to practice basic HTML and CSS skills (particularly Flexbox).

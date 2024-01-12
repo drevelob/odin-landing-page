@@ -1,0 +1,43 @@
+/*||RESET*/
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: #012;
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+/*||GLOBAL*/
+body {
+  background-color: #123;
+  color: #987;
+  font: clamp(1rem, 2.5vw, 2rem) monospace;
+  min-height: 100vh;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: inline;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+button {
+  font: inherit;
+}
+
+a:any-link {
+  color: #987;
+  text-decoration: none;
+}

@@ -84,6 +84,10 @@ a:any-link {
   margin-right: auto;
 }
 
+.nav-logo img {
+  filter: invert(1);
+}
+
 /*||HERO*/
 .hero {
   align-items: center;

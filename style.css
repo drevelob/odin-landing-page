@@ -33,11 +33,12 @@ body {
   display: flex;
   flex-direction: column;
   font: clamp(1rem, 2.5vw, 2.5rem) 'Roboto Mono', monospace;
-  height: 1912px;
+  height: 80em;
   margin: auto;
-  max-height: 1912px;
-  max-width: 1440px;
-  min-height: 100vh;
+  max-height: 1920px;
+  max-width: 1920px;
+  min-height: 150vh;
+  min-width: 300px;
 }
 
 ul {
@@ -84,7 +85,7 @@ a:any-link {
 .header nav {
   align-items: center;
   display: flex;
-  padding: 0.32em 8em;
+  padding: 0.32em 14%;
 }
 
 .nav-logo {
@@ -98,25 +99,26 @@ a:any-link {
 
 .nav-logo img {
   filter: invert(98%) sepia(84%) saturate(692%) hue-rotate(12deg) brightness(102%) contrast(102%);
+  max-width: 2em;
+  min-width: 30px;
 }
 
 /*||HERO*/
 .hero {
   align-items: center;
+  align-content: center;
   display: flex;
+  flex-wrap: wrap;
   flex: 1;
   gap: 0.4em;
-  padding: 0 8em;
-}
-
-.hero div,
-.hero figure {
-  flex: 1;
+  padding: 0 14%;
 }
 
 .hero div {
   align-items: flex-start;
   display: flex;
+  flex: 1;
+  flex-basis: 300px;
   flex-direction: column;
   gap: 0.4em;
 }
@@ -132,10 +134,14 @@ a:any-link {
   font-weight: 300;
 }
 
+.hero figure {
+  flex: 1;
+  flex-basis: 320px;
+}
+
 .hero figure img {
   border: 0.2em solid var(--A2COL);
   border-radius: 0.5em;
-  width: 100%;
 }
 
 /*||MAIN*/
@@ -153,19 +159,29 @@ a:any-link {
   flex-direction: column;
   gap: 2em;
   justify-content: center;
-  padding: 0 12em;
+  padding: 0 20%;
   text-align: center;
 }
 
 .info-title {
   font-size: 1.4em;
   font-weight: 700;
+  margin-top: 0.5em;
 }
 
 .info-images {
   display: flex;
+  flex-wrap: wrap;
   gap: 1.6em;
+  justify-content: center;
   margin-bottom: 2em;
+}
+
+.info-images figure {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 140px;
+  max-width: 8em;
 }
 
 .info-images figure img {
@@ -185,7 +201,7 @@ figcaption {
   background-color: var(--A4COL);
   display: flex;
   flex-basis: 35%;
-  padding: 0 12em;
+  padding: 0 20%;
 }
 
 blockquote {
@@ -211,7 +227,7 @@ cite {
   background-color: var(--BGCOL);
   display: flex;
   flex-basis: 30%;
-  padding: 0 8em;
+  padding: 0 14%;
 }
 
 .singup-holder {

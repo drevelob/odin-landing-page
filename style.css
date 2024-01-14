@@ -1,6 +1,18 @@
 /*||IMPORT*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
+/*||VARIABLES*/
+:root {
+  /*Color*/
+  --BGCOL: #012;
+  --FNCOL: #f9faf8;
+  --LKCOL: #eeff88;
+  --A1COL: #4e1fb3;
+  --A2COL: #e5e7eb;
+  --A3COL: #e832ac;
+  --A4COL: #123;
+}
+
 /*||RESET*/
 * {
   box-sizing: border-box;
@@ -9,15 +21,15 @@
 }
 
 html {
-  background-color: #012;
+  background-color: var(--BGCOL);
   font-size: 10px;
   scroll-behavior: smooth;
 }
 
 /*||GLOBAL*/
 body {
-  background-color: #1f2937;
-  color: #f9faf8;
+  background-color: var(--A1COL);
+  color: var(--FNCOL);
   display: flex;
   flex-direction: column;
   font: clamp(1rem, 2.5vw, 2.5rem) 'Roboto Mono', monospace;
@@ -45,10 +57,10 @@ img {
 }
 
 button {
-  background-color: #3882f6;
+  background-color: var(--A3COL);
   border-radius: 0.32em;
   border: none;
-  color: #e5e7eb;
+  color: var(--FNCOL);
   cursor: pointer;
   font: inherit;
   font-size: 0.8em;
@@ -57,8 +69,9 @@ button {
 }
 
 a:any-link {
-  color: #eeff88;
+  color: var(--LKCOL);
   text-decoration: none;
+  font-weight: 500;
 }
 
 /*||HEADER*/
@@ -76,6 +89,7 @@ a:any-link {
 
 .nav-logo {
   align-items: center;
+  color: var(--LKCOL);
   display: flex;
   font-size: 1em;
   font-weight: 700;
@@ -83,7 +97,7 @@ a:any-link {
 }
 
 .nav-logo img {
-  filter: invert(1);
+  filter: invert(98%) sepia(84%) saturate(692%) hue-rotate(12deg) brightness(102%) contrast(102%);
 }
 
 /*||HERO*/
@@ -113,13 +127,13 @@ a:any-link {
 }
 
 .hero div p {
-  color: #e5e7eb;
+  color: var(--A2COL);
   font-size: 0.8em;
   font-weight: 300;
 }
 
 .hero figure img {
-  border: 0.2em solid #e5e7eb;
+  border: 0.2em solid var(--A2COL);
   border-radius: 0.5em;
   width: 100%;
 }
@@ -133,8 +147,7 @@ a:any-link {
 
 /*||INFO*/
 .main-info {
-  background-color: whitesmoke;
-  color: #123;
+  background-color: var(--BGCOL);
   display: flex;
   flex-basis: 40%;
   flex-direction: column;
@@ -145,7 +158,6 @@ a:any-link {
 }
 
 .info-title {
-  color: #1f2937;
   font-size: 1.4em;
   font-weight: 700;
 }
@@ -158,7 +170,7 @@ a:any-link {
 
 .info-images figure img {
   border-radius: 0.5em;
-  border: 0.2em solid #3882f6;
+  border: 0.2em solid var(--A2COL);
   margin-bottom: 0.2em;
 }
 
@@ -170,19 +182,19 @@ figcaption {
 /*||QUOTE*/
 .main-quote {
   align-items: center;
-  background-color: #e5e7eb;
+  background-color: var(--A4COL);
   display: flex;
   flex-basis: 35%;
   padding: 0 12em;
 }
 
 blockquote {
-  color: #1f2937;
+  color: var(--A2COL);
   display: flex;
   flex-direction: column;
   font-size: 1.4em;
   font-style: italic;
-  font-weight: 100;
+  font-weight: 200;
   gap: 0.4em;
 }
 
@@ -196,7 +208,7 @@ cite {
 /*||SINGUP*/
 .main-singup {
   align-items: center;
-  background-color: #f9faf8;
+  background-color: var(--BGCOL);
   display: flex;
   flex-basis: 30%;
   padding: 0 8em;
@@ -204,7 +216,7 @@ cite {
 
 .singup-holder {
   align-items: center;
-  background-color: #3882f6;
+  background-color: var(--A3COL);
   border-radius: 0.5em;
   display: flex;
   flex: 1;
@@ -222,7 +234,7 @@ sub {
 }
 
 .button-border {
-  border: 0.2em solid #f9faf8;
+  border: 0.2em solid var(--A2COL);
 }
 
 /*||FOOTER*/
@@ -237,8 +249,9 @@ sub {
 }
 
 .footer-button {
-  background-color: #68f;
+  background-color: var(--A1COL);
   border-radius: 0.2em;
+  filter: invert(1);
   font-weight: bold;
   padding: 0.2em;
 }
